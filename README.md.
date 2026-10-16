@@ -1,0 +1,24 @@
+# Customer Segmentation & Churn Analytics in European Banking
+
+Segmentation-driven analysis of customer churn for a European retail bank (10,000 customers across France, Germany and Spain), with an interactive Streamlit dashboard.
+
+**Live dashboard:** https://bank-churn-segmentation-ggwalfq54trtgn6c3kyszl.streamlit.app/
+
+## Key findings
+- Overall churn rate is 20.37%.
+- Age is the strongest driver: customers aged 46-60 churn at 51.1%, compared with 7.6% for under-30s.
+- Germany churns at 32.4% (Geographic Risk Index 1.59), the highest in every age group.
+- Women churn more than men (25.1% vs 16.5%).
+- Inactive members churn 1.88 times as often as active members.
+- Customers holding a balance churn at about 24%, against 13.8% for zero-balance customers; credit score, tenure and salary barely matter.
+- Churned customers held 24.3% of all balances.
+
+## Files
+- `01_validation.ipynb` - data validation, cleaning, segmentation and KPI analysis
+- `app.py` - Streamlit dashboard
+- `churn_clean.csv` - cleaned data with segment columns
+- `European_Bank.csv` - original dataset
+
+## Run locally
+pip install -r requirements.txt
+streamlit run app.py
